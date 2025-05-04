@@ -28,11 +28,11 @@ export default {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         coffee: {
-          dark: '#006241', // Starbucks' signature dark green
-          medium: '#00704A', // Medium green shade
-          light: '#1E3932', // Deep forest green
-          cream: '#F9F9F6', // Bright cream
-          beige: '#F3F1E7' // Warm beige
+          dark: '#006241',
+          medium: '#00704A',
+          light: '#1E3932',
+          cream: '#F9F9F6',
+          beige: '#F3F1E7'
         },
         primary: {
           DEFAULT: 'hsl(var(--primary))',
@@ -80,20 +80,38 @@ export default {
       },
       keyframes: {
         'accordion-down': {
-          from: { height: '0' },
-          to: { height: 'var(--radix-accordion-content-height)' }
+          from: {
+            height: '0'
+          },
+          to: {
+            height: 'var(--radix-accordion-content-height)'
+          }
         },
         'accordion-up': {
-          from: { height: 'var(--radix-accordion-content-height)' },
-          to: { height: '0' }
+          from: {
+            height: 'var(--radix-accordion-content-height)'
+          },
+          to: {
+            height: '0'
+          }
         },
         fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' }
+          '0%': {
+            opacity: '0'
+          },
+          '100%': {
+            opacity: '1'
+          }
         },
         slideUp: {
-          '0%': { transform: 'translateY(20px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' }
+          '0%': {
+            transform: 'translateY(20px)',
+            opacity: '0'
+          },
+          '100%': {
+            transform: 'translateY(0)',
+            opacity: '1'
+          }
         }
       },
       animation: {
